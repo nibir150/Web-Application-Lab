@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anagram Finder</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    #input-container {
+      margin-bottom: 20px;
+    }
+    #result-container {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .anagram-group {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anagram Finder</h1>
+
+  <div id="input-container">
+    <label for="word-list">Enter a list of words (separated by commas):</label><br>
+    <textarea id="word-list" rows="4" cols="50"></textarea><br><br>
+    <button onclick="findAndDisplayAnagrams()">Find Anagrams</button>
+  </div>
+
+  <div id="result-container">
+    <h2>Anagram Groups:</h2>
+    <div id="anagram-output"></div>
+  </div>
+
+  <script src="anagram.js"></script>
+</body>
+</html>

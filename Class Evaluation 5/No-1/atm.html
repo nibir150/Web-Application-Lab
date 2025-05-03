@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple ATM</title>
+  <link rel="stylesheet" href="atm.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the ATM!</h1>
+    <div id="atm-interface">
+      <button id="check-balance-btn">Check Balance</button>
+      <button id="deposit-btn">Deposit Money</button>
+      <button id="withdraw-btn">Withdraw Money</button>
+      <button id="exit-btn">Exit</button>
+    </div>
+    <div id="input-section" style="display: none;">
+      <input type="number" id="input-field" placeholder="Enter amount">
+      <button id="submit-button">Submit</button>
+    </div>
+    <div id="output"></div>
+  </div>
+
+  <script src="atm.js"></script>
+</body>
+</html>
